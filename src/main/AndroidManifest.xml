@@ -15,7 +15,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SecondActivity"></activity>
+        <activity android:name=".SecondActivity" />
+        <activity android:name=".LoginDoc" />
+        <activity
+            android:name=".DocProfile"
+            android:label="@string/title_activity_doc_profile"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".DocEdit"></activity>
     </application>
 
 </manifest>

@@ -4,20 +4,19 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
+import android.widget.ImageView;
 
-public class SecondActivity extends AppCompatActivity {
-    Button button;
-
+public class DocProfile extends AppCompatActivity {
+    ImageView profile;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_second);
-        button=(Button)findViewById(R.id.buttondoc);
-        button.setOnClickListener(new View.OnClickListener() {
+        setContentView(R.layout.activity_doc_profile);
+        profile=(ImageView)findViewById(R.id.profile);
+        profile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(getApplication(),LoginDoc.class);
+                Intent intent=new Intent(getApplication(),DocEdit.class);
                 startActivity(intent);
             }
         });
